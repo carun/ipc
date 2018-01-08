@@ -1,0 +1,28 @@
+{
+	"name": "ipc",
+	"authors": [
+		"Arun Chandrasekaran"
+	],
+	"description": "A minimal D application.",
+	"copyright": "Copyright © 2018, Arun Chandrasekaran",
+	"license": "BSL",
+    "targetType": "library",
+    "configurations": [
+        { "name": "library" },
+
+        {
+            "name": "example-process1",
+            "targetType": "executable",
+            "targetName": "process1",
+            "sourceFiles": ["example/process1.d"],
+            "mainSourceFile": "example/process1.d",
+        },
+        {
+            "name": "example-process2",
+            "targetType": "executable",
+            "targetName": "process2",
+            "sourceFiles": ["example/process2.d"],
+            "mainSourceFile": "example/process2.d",
+        }
+    ]
+}
